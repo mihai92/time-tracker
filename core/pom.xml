@@ -12,11 +12,17 @@
     <packaging>jar</packaging>
     <name>Time Tracker (Core)</name>
     
-    <plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-war-plugin</artifactId>
-    <version>3.3.2</version>
-    </plugin>     
+     <build>
+        <pluginManagement>
+            <plugins>
+                  <plugin>
+                           <groupId>org.apache.maven.plugins</groupId>
+                           <artifactId>maven-war-plugin</artifactId>
+                           <version>3.3.2</version>
+                  </plugin>
+             </plugins>
+         </pluginManagement>
+      </build>  
 
     <dependencies>
         <dependency>
